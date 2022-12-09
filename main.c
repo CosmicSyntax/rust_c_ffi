@@ -1,10 +1,9 @@
 #include <stdint.h>
 #include <stdio.h>
-
-uint32_t rust_function();
+#include "rust/rust.h"
 
 int main() {
-  uint32_t x = rust_function();
+  uint32_t x = rust_function(100);
   printf("%d\n", x);
   return 0;
 }
